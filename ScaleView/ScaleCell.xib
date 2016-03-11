@@ -14,15 +14,21 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="262" height="235"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3月10日" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="h5k-hS-Pvq">
-                        <rect key="frame" x="98" y="83" width="66" height="29"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3月10日" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="h5k-hS-Pvq">
+                        <rect key="frame" x="54" y="74" width="66" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="1" green="0.98823529409999999" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3月10日" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="utR-Ed-OzS">
+                        <rect key="frame" x="142" y="74" width="66" height="29"/>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <color key="textColor" red="1" green="0.98823529409999999" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="漏签3天" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="dpx-Cw-xZm">
-                        <rect key="frame" x="33" y="118" width="66" height="39"/>
-                        <color key="backgroundColor" red="0.91966125064736626" green="0.92223115196315786" blue="0.92133168650263153" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <rect key="frame" x="92" y="133" width="78" height="39"/>
+                        <color key="backgroundColor" white="0.80044716282894746" alpha="0.5" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" red="1" green="0.98823529409999999" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -32,17 +38,32 @@
             </view>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="dpx-Cw-xZm" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="1:4" id="AJw-eP-Eft"/>
+                <constraint firstItem="dpx-Cw-xZm" firstAttribute="top" secondItem="h5k-hS-Pvq" secondAttribute="bottom" constant="30" id="9hd-Tm-QQj"/>
+                <constraint firstItem="dpx-Cw-xZm" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="1:3" constant="-10" id="AJw-eP-Eft"/>
                 <constraint firstItem="h5k-hS-Pvq" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-20" id="CHa-rb-ouw"/>
                 <constraint firstItem="h5k-hS-Pvq" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="1:4" id="EFg-7k-AHI"/>
-                <constraint firstItem="h5k-hS-Pvq" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="IvO-R4-3S4"/>
+                <constraint firstItem="h5k-hS-Pvq" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" multiplier="2:3" id="IvO-R4-3S4"/>
+                <constraint firstItem="utR-Ed-OzS" firstAttribute="height" secondItem="h5k-hS-Pvq" secondAttribute="height" id="NnE-ou-gVp"/>
+                <constraint firstItem="utR-Ed-OzS" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" multiplier="4:3" id="OA1-k7-gfM"/>
                 <constraint firstItem="h5k-hS-Pvq" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="1:8" id="WjD-Xm-ld5"/>
-                <constraint firstItem="dpx-Cw-xZm" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" multiplier="1:2" id="clX-B4-Trc"/>
+                <constraint firstItem="utR-Ed-OzS" firstAttribute="width" secondItem="h5k-hS-Pvq" secondAttribute="width" id="XKC-iQ-eE2"/>
+                <constraint firstItem="dpx-Cw-xZm" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="clX-B4-Trc"/>
                 <constraint firstItem="dpx-Cw-xZm" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="1:6" id="hFb-J5-L0n"/>
-                <constraint firstItem="dpx-Cw-xZm" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="20" id="zBx-lo-hfH"/>
+                <constraint firstItem="dpx-Cw-xZm" firstAttribute="top" secondItem="utR-Ed-OzS" secondAttribute="bottom" constant="30" id="pYh-yV-KwP"/>
+                <constraint firstItem="dpx-Cw-xZm" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="7:6" constant="15" id="zBx-lo-hfH"/>
             </constraints>
             <size key="customSize" width="262" height="235"/>
-            <point key="canvasLocation" x="339" y="355.5"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="CHa-rb-ouw"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="endLabel" destination="utR-Ed-OzS" id="fll-tp-cIb"/>
+                <outlet property="lostLabel" destination="dpx-Cw-xZm" id="dcm-Vm-UpO"/>
+                <outlet property="startLabel" destination="h5k-hS-Pvq" id="h9s-Ll-sEH"/>
+            </connections>
+            <point key="canvasLocation" x="409" y="362.5"/>
         </collectionViewCell>
     </objects>
 </document>

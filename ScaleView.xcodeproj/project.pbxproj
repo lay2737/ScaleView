@@ -18,6 +18,7 @@
 		85ECE0671C8FBFB700A53E5A /* ScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ECE0661C8FBFB700A53E5A /* ScaleView.swift */; };
 		85ECE06C1C900FF300A53E5A /* ScaleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ECE06A1C900FF300A53E5A /* ScaleCell.swift */; };
 		85ECE06D1C900FF300A53E5A /* ScaleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85ECE06B1C900FF300A53E5A /* ScaleCell.xib */; };
+		85FC94141C92B5A9009FAAC3 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC94131C92B5A9009FAAC3 /* FooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		85ECE0661C8FBFB700A53E5A /* ScaleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleView.swift; sourceTree = SOURCE_ROOT; };
 		85ECE06A1C900FF300A53E5A /* ScaleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleCell.swift; sourceTree = "<group>"; };
 		85ECE06B1C900FF300A53E5A /* ScaleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScaleCell.xib; sourceTree = "<group>"; };
+		85FC94131C92B5A9009FAAC3 /* FooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				85ECE06A1C900FF300A53E5A /* ScaleCell.swift */,
 				85ECE06B1C900FF300A53E5A /* ScaleCell.xib */,
 				85ECD3EB1C9115EC00DD0F8E /* LExtension.swift */,
+				85FC94131C92B5A9009FAAC3 /* FooterView.swift */,
 			);
 			path = ScaleView;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				85ECE0671C8FBFB700A53E5A /* ScaleView.swift in Sources */,
 				85ECE03B1C8FBF7800A53E5A /* ViewController.swift in Sources */,
 				85ECE06C1C900FF300A53E5A /* ScaleCell.swift in Sources */,
+				85FC94141C92B5A9009FAAC3 /* FooterView.swift in Sources */,
 				85ECE0391C8FBF7800A53E5A /* AppDelegate.swift in Sources */,
 				85ECD3EC1C9115EC00DD0F8E /* LExtension.swift in Sources */,
 			);
