@@ -25,38 +25,12 @@ class ScaleCell: UICollectionViewCell {
 //        }
         let context:CGContextRef = UIGraphicsGetCurrentContext()!
          CGContextClearRect(context, self.bounds)
-//        if shouldDrawed == false{
-//            CGContextClearRect(context, self.bounds)
-//            //画直线
-//            CGContextSetRGBStrokeColor(context, 255/255, 252/255, 225/255, 1)
-//            CGContextSetLineWidth(context, radius/3)
-//            CGContextAddLines(context, [CGPoint(x:0, y:self.frame.size.height/2),CGPoint(x:self.frame.size.width/3 - radius, y:self.frame.size.height/2)], 2)
-//            CGContextDrawPath(context, CGPathDrawingMode.FillStroke)
-//            
-//            
-//            //画实心圆
-//            // CGContextSetRGBStrokeColor(context, 0, 0, 255, 1);
-//            CGContextSetLineWidth(context, 5.0);
-//            CGContextAddEllipseInRect(context, CGRectMake(self.frame.size.width/3 - radius, self.frame.size.height/2 - radius,2*radius, 2*radius));//在这个框中画圆'
-//            CGContextSetFillColor(context, CGColorGetComponents( LExtension.RGBColor(0xFFFCE2) .CGColor) )
-//            CGContextFillPath(context)
-//            
-//            startLabel.text = nil
-//            endLabel.text = nil
-//            lostLabel.backgroundColor = UIColor.clearColor()
-//            lostLabel.text = nil
-//
-//            return
-//        }else{
-//            lostLabel.backgroundColor = UIColor(white: 0.7, alpha: 0.5)
-//        }
         
         //画三角
     
         CGContextAddLines(context, [CGPoint(x:self.frame.size.width/2-5, y:self.frame.size.height/2+15),CGPoint(x:self.frame.size.width/2, y:self.frame.size.height/2+10),CGPoint(x:self.frame.size.width/2+5, y:self.frame.size.height/2+15)], 3)
         CGContextSetFillColor(context, CGColorGetComponents( UIColor(red: 0.8, green: 0.8, blue: 0.8, alpha: 0.5) .CGColor) )
         CGContextFillPath(context)
-        //CGContextDrawPath(context, CGPathDrawingMode.FillStroke)
         
         
         //画直线
@@ -67,7 +41,6 @@ class ScaleCell: UICollectionViewCell {
         
         
         //画实心圆
-        // CGContextSetRGBStrokeColor(context, 0, 0, 255, 1);
         CGContextSetLineWidth(context, 5.0);
         CGContextAddEllipseInRect(context, CGRectMake(self.frame.size.width/3 - radius, self.frame.size.height/2 - radius,2*radius, 2*radius));//在这个框中画圆'
         CGContextSetFillColor(context, CGColorGetComponents( LExtension.RGBColor(0xFFFCE2) .CGColor) )
@@ -79,15 +52,11 @@ class ScaleCell: UICollectionViewCell {
             CGContextAddRect(context, CGRectMake(self.frame.size.width/3+CGFloat(index-1)*radius, self.frame.size.height/2-radius/4, radius/2, radius/2))
             CGContextSetFillColorWithColor(context, LExtension.RGBColor(0xFFFCE2) .CGColor)
             CGContextFillPath(context)
-            // CGContextDrawPath(context, kCGPathFillStoke)
         }
         
         //画边框圆
-        //CGContextSetRGBStrokeColor(context, 255/255, 252/255, 225/255, 1)
         CGContextSetLineWidth(context, 1)
         CGContextAddArc(context, self.frame.size.width/3*2, self.frame.size.height/2, radius-0.5,  0,CGFloat(2)*PI, 0)
-        //CGContextSetFillColor(context, CGColorGetComponents( LExtension.RGBColor(0xFFFCE2) .CGColor) )
-        //CGContextFillPath(context)
         CGContextStrokePath(context);
         
         //画直线
@@ -101,7 +70,6 @@ class ScaleCell: UICollectionViewCell {
     override func drawRect(rect: CGRect) {
         super.drawRect(rect)
         self.drawLine()
-        
-        
+
     }
 }

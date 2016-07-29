@@ -67,9 +67,7 @@ class ScaleView: UIView ,UICollectionViewDelegate ,UICollectionViewDataSource{
         gradient.frame = self.bounds
         gradient.colors = [LExtension.RGBColor(0xFF6778).CGColor,LExtension.RGBColor(0x96A0E8).CGColor]
         self.layer.insertSublayer(gradient, atIndex: 0)
-        
-        
-        
+   
         let time = dateArray.last?.last
         let dateForm = NSDateFormatter()
         dateForm.dateFormat = "MM.dd"
@@ -88,15 +86,12 @@ class ScaleView: UIView ,UICollectionViewDelegate ,UICollectionViewDataSource{
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! ScaleCell
         cell.shouldDrawed = indexPath.row == dateArray.count-1 ? false : true
-        //cell.drawLine()
         cell.startLabel.text = dateArray[indexPath.row][0]
         cell.endLabel.text = dateArray[indexPath.row][1]
-        //   cell.backgroundColor =  indexPath.row%2==0 ? UIColor.blackColor():UIColor.whiteColor()
+        
         return cell
     }
-    func collectionView(collectionView: UICollectionView, didEndDisplayingCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath)  {
-        // ( cell as! ScaleCell) .drawLine()
-    }
+    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dateArray.count
     }
